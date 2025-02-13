@@ -28,7 +28,7 @@ enum Partition<T> {
 pub(crate) enum PartitionRawData {
     #[cfg(esp_idf_littlefs_sdmmc_support)]
     SdCard(*mut sdmmc_card_t),
-    PartitionLabel(*const i8),
+    PartitionLabel(*const u8),
     RawPartition(*mut esp_partition_t),
 }
 
