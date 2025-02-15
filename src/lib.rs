@@ -123,4 +123,4 @@ pub mod tls;
 pub mod wifi;
 pub mod ws;
 
-mod private;
+pub mod private;
